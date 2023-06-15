@@ -64,7 +64,7 @@ def show_start_screen():
     draw_text(screen, "遊戲標題", 60, WIDTH / 2, HEIGHT / 4)
     draw_text(screen, "按下任意按鍵開始遊戲", 22, WIDTH / 2, HEIGHT / 2)
     draw_text(screen, "紅蘑菇加分;綠蘑菇減分", 22, WIDTH / 2, HEIGHT * 3 / 5)
-    draw_text(screen, "目標:得到8分", 22, WIDTH / 2, HEIGHT * 3 / 4)
+    draw_text(screen, "目標:得到10分", 22, WIDTH / 2, HEIGHT * 3 / 4)
     pygame.display.flip()
 
     waiting = True
@@ -315,7 +315,7 @@ while running:
     all_sprites.draw(screen)
     draw_text(screen, "Score: " + str(score), 18, WIDTH / 2, 10)
 
-    if score >= 8:
+    if score >= 10:
         running = False
         show_game_over_screen()
         # 停止背景音樂
