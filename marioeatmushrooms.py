@@ -291,6 +291,8 @@ while running:
     # 碰撞到 Mushroom2
     if collided_mushrooms2:
         score -= 1
+        if score<0:
+            score=0
         hit_sound.play()
         player_scale_factor = player_scale_factor*0.95  # 每次碰到 Mushroom2，放大比例減少
         if player_scale_factor < 0.1:
