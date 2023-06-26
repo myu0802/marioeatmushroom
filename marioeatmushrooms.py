@@ -61,7 +61,7 @@ def draw_text(surf, text, size, x, y):
 # 遊戲開始畫面
 def show_start_screen():
     screen.blit(background_img, (0, 0))
-    draw_text(screen, "遊戲標題", 60, WIDTH / 2, HEIGHT / 4)
+    draw_text(screen, "MarioEatMushrooms", 60, WIDTH / 2, HEIGHT / 4)
     draw_text(screen, "按下任意按鍵開始遊戲", 22, WIDTH / 2, HEIGHT / 2)
     draw_text(screen, "紅蘑菇加分;綠蘑菇減分", 22, WIDTH / 2, HEIGHT * 3 / 5)
     draw_text(screen, "目標:得到10分", 22, WIDTH / 2, HEIGHT * 3 / 4)
